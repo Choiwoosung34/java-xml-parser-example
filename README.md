@@ -1,5 +1,5 @@
 # Easy way to read XML in java
-
+``` shell
 공공데이터 포털 오픈 API 의 xml 을 쉽게 파싱하고 저장하는 예제~
 
 본 프로젝트는 XML 파싱하는 Java 코드를 구글링하며 찾다가,
@@ -9,15 +9,17 @@
 자료가 대부분이라 화나서 더 좋은 방법을 찾다가 openfeign 을 사용하여 개발한
 
 공공데이터 포털의 아래 API 들을 호출하여 읽고 저장하는 예제입니당.
+```
 
-> 한국마사회 기수 상세정보
-> - https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056828
-> 
-> 한국마사회 기수변경 정보
-> - https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15057181
-> 
-> 한국마사회 기수 성적 정보
-> - https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056591
+## 예제 API 리스트
+한국마사회 기수 상세정보
+ - https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056828
+
+한국마사회 기수변경 정보
+- https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15057181
+
+한국마사회 기수 성적 정보
+- https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056591
 
 ## 이런 분들 맘껏 가져다 쓰세요~
 - `공공 데이터 포털의 API 를 사용하려는 사람~`
@@ -29,5 +31,4 @@
 - domain 패키지의 xml 안에 있는 객체를 참고하여, 내려받는 Response 에 맞춰 객체를 정의한다.
 
 #
-블로그에도 남겨놨어요...
-
+블로그에도 남겨놨어용..
