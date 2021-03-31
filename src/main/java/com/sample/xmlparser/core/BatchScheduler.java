@@ -25,13 +25,10 @@ import java.util.List;
 @Component
 public class BatchScheduler {
 
-    private @Autowired JockeyRepository jockeyRepository;
     private @Value("${api.serviceKey}") String apiKey;
+    private @Autowired JockeyRepository jockeyRepository;
     private OpenDataApi openDataApi;
 
-    /**
-     * Class 생성 시 실행 되는 함수
-     */
     @PostConstruct
     public void postConstruct() {
         log.info("BatchScheduler Started At : {}", LocalDateTime.now().toString());
@@ -46,9 +43,6 @@ public class BatchScheduler {
                 .target(OpenDataApi.class, "http://apis.data.go.kr/B551015");
     }
 
-    /**
-     * Class 소멸 시 실행 되는 함수
-     */
     @PreDestroy
     public void preDestroy() {
         log.info("BatchScheduler Finished At : {}", LocalDateTime.now().toString());
@@ -58,9 +52,9 @@ public class BatchScheduler {
     // Main Logic
     ///////////////////////////////////
     @Scheduled(fixedDelay = 1000)
-    public void scheduleTask() throws Exception {
-        
-        // 1 ~ 10 Page 가져와서 DB 넣는 예시
+    public void scheduleTask() {
+
+        // 1 ~ 10 Page 가져오는 예시
         for (int i = 1; i <= 10; i++) {
             String rowsPerPage = "10";
             String pageNumber = String.valueOf(i);
@@ -76,10 +70,12 @@ public class BatchScheduler {
             log.info("\n");
 
             // DB 저장 예시
-            final List<Item> items = jockeyInfos.getBody().getItems();
-            for (Item item : items) {
-                jockeyRepository.save(Jockey.builder().name(item.getJkName()).build());
-            }
+            jockeyInfos.getBody().getItems().forEach( item -> {
+                log.info("Current Item : {}", item.toString());
+                log.info("Save : {}",
+                        jockeyRepository.save(Jockey.builder().name(item.getJkName()).build()).toString()
+                );
+            });
         }
     }
 }
