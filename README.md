@@ -21,7 +21,7 @@
 한국마사회 기수 성적 정보
 - https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056591
 
-## 이런 분들 맘껏 가져다 쓰세요~
+## 이런 분들 봤으면 좋겠어요..
 - `공공 데이터 포털의 API 를 사용하려는 사람~`
 - `API Response 가 JSON 이 아니라 xml 형식으로 내려와서 화나는 사람.`
 - `xml 파싱하는거 검색 했더니 HttpURLConnection 열어서 BufferedReader로 읽어와서 어쩌구저쩌구 너무 복잡한 코드가 싫으신 분`
