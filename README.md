@@ -34,6 +34,7 @@
 - domain 패키지의 xml 안에 있는 객체를 참고하여, 내려받는 Response 에 맞춰 객체를 정의한다.
 
 ## Docker
+Dockerfile 이 있는 디렉토리에서 아래 명령어 순서대로 입력
 ### 1.1 Package
 ``` shell
 mvn package
