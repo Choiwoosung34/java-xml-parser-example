@@ -33,7 +33,17 @@
   - **그냥 아무나 내려받아서 실제로 돌려볼 수 있게 api key 업데이트 해놓음.**
 - domain 패키지의 xml 안에 있는 객체를 참고하여, 내려받는 Response 에 맞춰 객체를 정의한다.
 
-#
-블로그에도 남겨놨어용..
+## Docker
+### 1.1 Package
+``` shell
+mvn package
+```
+### 1.2 Image
+``` shell
+docker build -t com.sample.xmlparser:0.0.1-SNAPSHOT .
+```
 
-https://blog.naver.com/PostView.nhn?blogId=myhouse34&Redirect=View&logNo=222284326241&categoryNo=22&isAfterWrite=true&isMrblogPost=false&isHappyBeanLeverage=true&contentLength=55523
+### 1.3 Run
+``` shell
+docker run -d -it --name com.sample.xmlparser -e SPRING_PROFILES_ACTIVE=local -p 9000:9000 com.sample.xmlparser:0.0.1-SNAPSHOT
+```
