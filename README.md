@@ -27,7 +27,8 @@
 - `xml 파싱하는거 검색 했더니 HttpURLConnection 열어서 BufferedReader로 읽어와서 어쩌구저쩌구 너무 복잡한 코드가 싫으신 분`
 
 ## 프로젝트 실행 시 체크해야 되는 것!
-- application.properties 파일의 `api.serviceKey`의 값을 공공 데이터 포털에서 받은 key 값으로 넣는다.
+- ~~application.properties 파일의 `api.serviceKey`의 값을 공공 데이터 포털에서 받은 key 값으로 넣는다.~~
+  - 실제로 돌려볼 수 있게 api key 업데이트 해놓음.
 - domain 패키지의 xml 안에 있는 객체를 참고하여, 내려받는 Response 에 맞춰 객체를 정의한다.
 
 #
