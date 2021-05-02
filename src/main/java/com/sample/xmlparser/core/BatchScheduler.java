@@ -51,7 +51,7 @@ public class BatchScheduler {
     ///////////////////////////////////
     // Main Logic
     ///////////////////////////////////
-    @Scheduled(fixedDelay = 1000)
+     @Scheduled(fixedDelay = 1000)
     public void scheduleTask() {
 
         // 1 ~ 10 Page 가져오는 예시
@@ -77,5 +77,7 @@ public class BatchScheduler {
                 );
             });
         }
+
+        System.exit(0);
     }
 }
