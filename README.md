@@ -13,7 +13,7 @@
 ```
 사용한 라이브러리 : https://github.com/OpenFeign/feign
 
-## 예제 API 리스트
+## 예제로  API 리스트
 한국마사회 기수 상세정보
  - https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056828
 
