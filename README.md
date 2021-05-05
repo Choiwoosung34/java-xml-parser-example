@@ -11,7 +11,7 @@
 
 공공데이터 포털의 아래 API 들을 호출하여 읽고 저장하는 예제입니당.
 ```
-사용한 라이브러리 : https://github.com/OpenFeign/feign
+사용한 라이브러리 : https://github.com/OpenFeign/feign  
 예제로 사용한 API : 한국마사회 기수 상세정보
  - https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056828
 
