@@ -7,7 +7,7 @@
 
 아직도 대부분의 자료가 HttpURLConnection 을 열고 BufferedReader 로 읽는
 
-자료가 대부분이라 화나서 더 좋은 방법을 찾다가 openfeign 을 사용하여 개발한
+자료가 대부분이라 더 좋은 방법을 찾다가 openfeign 을 사용하여 개발한
 
 공공데이터 포털의 아래 API 들을 호출하여 읽고 저장하는 예제입니당.
 ```
