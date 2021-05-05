@@ -9,7 +9,7 @@
 
 자료가 대부분이라 더 좋은 방법을 찾다가 openfeign 을 사용하여 개발한
 
-공공데이터 포털의 아래 API 들을 호출하여 읽고 저장하는 예제입니당.
+공공데이터 포털의 xml 로 response 를 주는 API 를 객체로 만들어 저장하는 예제 프로젝트입니다.
 ```
 사용한 라이브러리 : https://github.com/OpenFeign/feign  
 예제로 사용한 API : https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056828 (한국마사회 기수 상세정보)
