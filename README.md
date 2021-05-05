@@ -13,8 +13,13 @@
 ```
 사용한 라이브러리 : https://github.com/OpenFeign/feign
 
+## 예제로 사용한  API 리스트
+한국마사회 기수 상세정보
+ - https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056828
+
 ## Docker
-Dockerfile 이 있는 디렉토리에서 아래 명령어 순서대로 입력
+내려받고 run 만 시키면 실제로 돌려볼 수 있게 해놓았습니다.
+docker 로 돌리려면, Dockerfile 이 있는 디렉토리에서 아래 명령어 순서대로 입력하면 됩니다.
 ### 1.1 Package
 ``` shell
 mvn package
@@ -28,10 +33,6 @@ docker build -t com.sample.xmlparser:0.0.1-SNAPSHOT .
 ``` shell
 docker run -d -it --name com.sample.xmlparser -e SPRING_PROFILES_ACTIVE=local -p 9000:9000 com.sample.xmlparser:0.0.1-SNAPSHOT
 ```
-
-## 예제로 사용한  API 리스트
-한국마사회 기수 상세정보
- - https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056828
 
 ### Basics
 전체적인 구조입니다.
