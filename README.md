@@ -12,7 +12,7 @@
 공공데이터 포털의 아래 API 들을 호출하여 읽고 저장하는 예제입니당.
 ```
 사용한 라이브러리 : https://github.com/OpenFeign/feign  
-사용한 API : https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056828 (한국마사회 기수 상세정보)
+예제로 사용한 API : https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15056828 (한국마사회 기수 상세정보)
 
 ## Docker
 내려받고 run 만 시키면 실제로 돌려볼 수 있게 해놓았습니다.  
