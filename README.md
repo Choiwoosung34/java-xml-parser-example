@@ -142,6 +142,8 @@ public class Application {
 본 코드의 핵심은 XML 을 객체에 잘 매핑 시키는 것입니다.  
 http://apis.data.go.kr/B551015/API12/jockeyInfo?serviceKey={serviceKey}&pageNo=1&numOfRows=3  
 위 API 를 호출하면 아래와 같은 응답을 받아볼 수 있습니다.
+
+#### XML RESPONSE
 ``` xml
 <response>
   <header>
@@ -220,6 +222,8 @@ http://apis.data.go.kr/B551015/API12/jockeyInfo?serviceKey={serviceKey}&pageNo=1
 위 XML 응답을 아래처럼 마치 JPA 테이블 매핑 하듯이 객체로 정의하면 됩니다.  
 그럼 feignClient 에서 응답 받아올 때 객체에 매핑돼서,
 객체로 편하게 내부적으로 이용할 수 있습니다.
+
+#### Object Mapping
 ```java
 @Data
 @AllArgsConstructor
